@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="560.0" prefWidth="771.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MainWindowController">
+   <children>
+      <Button fx:id="website" layoutX="394.0" layoutY="93.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="120.0" style="-fx-background-color: teal;" text="Website" textFill="WHITE" AnchorPane.leftAnchor="394.0" AnchorPane.rightAnchor="257.0" />
+      <Button fx:id="profile" layoutX="263.0" layoutY="93.0" mnemonicParsing="false" onAction="#profileAction" prefHeight="32.0" prefWidth="120.0" style="-fx-background-color: teal;" text="Profile" textFill="WHITE" AnchorPane.leftAnchor="263.0" AnchorPane.rightAnchor="388.0" />
+      <Label layoutX="264.0" layoutY="148.0" text="Friends:" />
+      <Label fx:id="textingarea" layoutX="79.0" layoutY="236.0" prefHeight="162.0" prefWidth="590.0" style="-fx-border-color: teal;" />
+      <Button fx:id="sendtext" layoutX="416.0" layoutY="437.0" mnemonicParsing="false" onAction="#sendAction" prefHeight="32.0" prefWidth="120.0" style="-fx-border-color: teal; -fx-background-color: teal;" text="Send" textFill="WHITE" />
+      <Label fx:id="friendnamelabel" layoutX="612.0" layoutY="477.0" text="FriendNick" />
+      <Label fx:id="friendstatuslabel" layoutX="620.0" layoutY="510.0" text="STATUS" />
+      <Button fx:id="addfriend" layoutX="266.0" layoutY="182.0" mnemonicParsing="false" onAction="#addAction" prefHeight="32.0" prefWidth="38.0" style="-fx-background-color: teal;" text="Add" textFill="WHITE" />
+      <TextField fx:id="writetext" layoutX="79.0" layoutY="421.0" prefHeight="64.0" prefWidth="320.0" style="-fx-border-color: teal;" />
+      <AnchorPane prefHeight="64.0" prefWidth="771.0" style="-fx-background-color: teal;">
+         <children>
+            <Button fx:id="logout" layoutX="637.0" layoutY="16.0" mnemonicParsing="false" onAction="#logoutAction" prefHeight="32.0" prefWidth="120.0" style="-fx-background-color: teal; -fx-border-color: white;" text="Logout" textFill="WHITE" />
+            <Label layoutX="14.0" layoutY="19.0" text="Talker" textFill="WHITE">
+               <font>
+                  <Font name="Rubik-Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="namelabel" layoutX="346.0" layoutY="13.0" text="Profile">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ChoiceBox fx:id="friendchooser" layoutX="318.0" layoutY="143.0" prefHeight="27.0" prefWidth="196.0" style="-fx-background-color: white; -fx-border-color: teal;" />
+      <TextField fx:id="addnametext" layoutX="318.0" layoutY="184.0" prefHeight="27.0" prefWidth="196.0" style="-fx-border-color: teal;" />
+      <Button layoutX="581.0" layoutY="437.0" mnemonicParsing="false" onAction="#checkAction" prefHeight="32.0" prefWidth="120.0" style="-fx-background-color: teal;" text="Check" textFill="WHITE" />
+   </children>
+</AnchorPane>
